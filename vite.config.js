@@ -4,6 +4,7 @@ import { NodeGlobalsPolyfillPlugin } from '@esbuild-plugins/node-globals-polyfil
 import polyfillNode from 'rollup-plugin-polyfill-node';
 
 const viteConfig = ({ mode }) => {
+
   process.env = { ...process.env, ...loadEnv(mode, '', '') };
   return defineConfig({
     define: {
