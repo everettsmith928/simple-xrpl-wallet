@@ -24,7 +24,6 @@ const viteConfig = ({ mode }) => {
       },
     },
     build: {
-      outDir: './docs',
       rollupOptions: {
         plugins: [polyfillNode()],
       },
